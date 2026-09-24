@@ -1,0 +1,80 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="ConsolasFallback,Consolas,monospace" width="1100px" height="580px" font-size="15px">
+<style>
+@font-face {
+  src: local('Consolas'), local('Consolas Bold');
+  font-family: 'ConsolasFallback';
+  font-display: swap;
+  size-adjust: 109%;
+}
+.key   { fill: #ffa657; }
+.value { fill: #a5d6ff; }
+.add   { fill: #3fb950; }
+.del   { fill: #f85149; }
+.cc    { fill: #616e7f; }
+.head  { fill: #c9d1d9; }
+text, tspan { white-space: pre; }
+</style>
+
+<!-- background -->
+<rect width="1100px" height="580px" fill="#0d1117" rx="15"/>
+
+<!-- left side: ascii-art image embedded -->
+<image href="https://raw.githubusercontent.com/Bit-wisely/Bit-wisely/main/ascii-art.svg"
+       x="0" y="0" width="520" height="580" clip-path="url(#leftclip)"/>
+<clipPath id="leftclip">
+  <rect x="0" y="0" width="520" height="580" rx="15"/>
+</clipPath>
+
+<!-- subtle vertical separator -->
+<line x1="525" y1="20" x2="525" y2="560" stroke="#30363d" stroke-width="1"/>
+
+<!-- right side: neofetch panel -->
+<text x="540" y="35" class="head">
+  <tspan x="540" y="35">muhammed-shifan@Bit-wisely</tspan>
+  <tspan> ―――――――――――――――――――――――――――――――――――――――</tspan>
+</text>
+
+<text x="540" y="60" class="head">
+<tspan x="540" y="60"  class="cc">  </tspan><tspan class="key">OS</tspan><tspan class="cc">: ........................... </tspan><tspan class="value">Linux / Windows</tspan>
+<tspan x="540" y="82"  class="cc">  </tspan><tspan class="key">Uptime</tspan><tspan class="cc">: ................. </tspan><tspan class="value">20 years, 9 months</tspan>
+<tspan x="540" y="104" class="cc">  </tspan><tspan class="key">Status</tspan><tspan class="cc">: .................. </tspan><tspan class="value">Student</tspan>
+<tspan x="540" y="126" class="cc">  </tspan><tspan class="key">Shell</tspan><tspan class="cc">: .................... </tspan><tspan class="value">Curiosity + C</tspan>
+<tspan x="540" y="148" class="cc">  </tspan><tspan class="key">IDE</tspan><tspan class="cc">: ...................... </tspan><tspan class="value">VSCode</tspan>
+
+<tspan x="540" y="182" >  ― Languages ―――――――――――――――――――――――――――――――――――――</tspan>
+
+<tspan x="540" y="208" class="cc">  </tspan><tspan class="key">Languages.Programming</tspan><tspan class="cc">: .... </tspan><tspan class="value">C, HTML, CSS, JavaScript</tspan>
+<tspan x="540" y="230" class="cc">  </tspan><tspan class="key">Languages.Learning</tspan><tspan class="cc">: ....... </tspan><tspan class="value">Web Dev, OS / Kernel Dev</tspan>
+<tspan x="540" y="252" class="cc">  </tspan><tspan class="key">Languages.Real</tspan><tspan class="cc">: ........... </tspan><tspan class="value">English, Malayalam</tspan>
+
+<tspan x="540" y="286" >  ― Interests ――――――――――――――――――――――――――――――――――――――</tspan>
+
+<tspan x="540" y="312" class="cc">  </tspan><tspan class="key">Hobbies.Crypto</tspan><tspan class="cc">: ........... </tspan><tspan class="value">Classical Ciphers, RSA, Key Exchange</tspan>
+<tspan x="540" y="334" class="cc">  </tspan><tspan class="key">Hobbies.Systems</tspan><tspan class="cc">: .......... </tspan><tspan class="value">Low-Level C, Memory Management</tspan>
+<tspan x="540" y="356" class="cc">  </tspan><tspan class="key">Hobbies.Web</tspan><tspan class="cc">: ............. </tspan><tspan class="value">Building things from scratch</tspan>
+
+<tspan x="540" y="390" >  ― Contact ―――――――――――――――――――――――――――――――――――――――</tspan>
+
+<tspan x="540" y="416" class="cc">  </tspan><tspan class="key">Email</tspan><tspan class="cc">: .................... </tspan><tspan class="value">muhammedshifanvm12@gmail.com</tspan>
+<tspan x="540" y="438" class="cc">  </tspan><tspan class="key">LinkedIn</tspan><tspan class="cc">: ................. </tspan><tspan class="value">muhammed-shifan-v-m-94a0773a7</tspan>
+<tspan x="540" y="460" class="cc">  </tspan><tspan class="key">GitHub</tspan><tspan class="cc">: ................... </tspan><tspan class="value">Bit-wisely</tspan>
+
+<tspan x="540" y="494" >  ― GitHub Stats ―――――――――――――――――――――――――――――――――――</tspan>
+
+<tspan x="540" y="520" class="cc">  </tspan><tspan class="key">Repos</tspan><tspan class="cc">: ...... </tspan><tspan class="value">10</tspan><tspan class="cc"> | </tspan><tspan class="key">Followers</tspan><tspan class="cc">: ................ </tspan><tspan class="value">0</tspan>
+<tspan x="540" y="542" class="cc">  </tspan><tspan class="key">Following</tspan><tspan class="cc">: .... </tspan><tspan class="value">0</tspan><tspan class="cc"> | </tspan><tspan class="key">Member Since</tspan><tspan class="cc">: .......... </tspan><tspan class="value">Dec 2024</tspan>
+<tspan x="540" y="564" class="cc">  </tspan><tspan class="key">Bio</tspan><tspan class="cc">: .............. </tspan><tspan class="value">Learning curiously.</tspan>
+</text>
+
+<!-- colour palette dots (decorative, just like neofetch) -->
+<circle cx="540" cy="578" r="6" fill="#f85149"/>
+<circle cx="556" cy="578" r="6" fill="#ffa657"/>
+<circle cx="572" cy="578" r="6" fill="#e3b341"/>
+<circle cx="588" cy="578" r="6" fill="#3fb950"/>
+<circle cx="604" cy="578" r="6" fill="#a5d6ff"/>
+<circle cx="620" cy="578" r="6" fill="#79c0ff"/>
+<circle cx="636" cy="578" r="6" fill="#d2a8ff"/>
+<circle cx="652" cy="578" r="6" fill="#c9d1d9"/>
+
+</svg>
