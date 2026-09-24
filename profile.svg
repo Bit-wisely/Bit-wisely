@@ -1,32 +1,27 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1100" height="580" font-size="14.5px">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="580">
+<defs>
+  <clipPath id="lc">
+    <rect width="530" height="580" rx="12"/>
+  </clipPath>
+</defs>
 <style>
-@font-face {
-  src: local('Consolas'), local('Consolas Bold');
-  font-family: 'ConsolasFallback';
-  font-display: swap;
-  size-adjust: 109%;
-}
-.key   { fill: #ffa657; }
-.value { fill: #a5d6ff; }
-.add   { fill: #3fb950; }
-.del   { fill: #f85149; }
-.cc    { fill: #616e7f; }
-.head  { fill: #c9d1d9; }
-text, tspan { white-space: pre; }
+  .neo { font-family: Consolas,monospace; font-size: 13.5px; }
+  .key { fill: #ffa657; }
+  .val { fill: #a5d6ff; }
+  .cc  { fill: #616e7f; }
+  .hd  { fill: #c9d1d9; }
 </style>
 
-<!-- dark background -->
+<!-- card background -->
 <rect width="1100" height="580" fill="#0d1117" rx="15"/>
 
-<!-- LEFT: ascii-art inlined as nested svg (960x576 -> 520x580) -->
-<svg x="0" y="0" width="520" height="580" viewBox="0 0 960 576" preserveAspectRatio="xMidYMid meet">
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="576" viewBox="0 0 960 576">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono');
-    text { font-family: 'Share Tech Mono', monospace; font-size: 16px; }
-  </style>
-  <rect width="100%" height="100%" fill="#000000"/>
+<!-- left panel black background -->
+<rect width="530" height="580" fill="#000000" rx="12"/>
+
+<!-- ascii art: scaled g block, clipped to left panel -->
+<g clip-path="url(#lc)">
+  <g transform="scale(0.552083,1.006944)">
   <g>
     <text x="0" y="12.8" fill="rgb(0,0,0)">◕</text>
     <text x="9.6" y="12.8" fill="rgb(0,0,0)">◖</text>
@@ -6029,69 +6024,64 @@ text, tspan { white-space: pre; }
     <text x="940.8" y="579.1999999999999" fill="rgb(8,8,8)">•</text>
     <text x="950.4" y="579.1999999999999" fill="rgb(8,8,8)">•</text>
   </g>
-</svg>
+  </g>
+</g>
 
 <!-- vertical divider -->
-<line x1="526" y1="18" x2="526" y2="562" stroke="#30363d" stroke-width="1"/>
+<line x1="536" y1="16" x2="536" y2="564" stroke="#30363d" stroke-width="1"/>
 
-<!-- RIGHT: neofetch panel, x starts at 540 -->
-<!-- header -->
-<text x="540" y="34" font-size="14.5px" fill="#c9d1d9">muhammed-shifan@Bit-wisely</text>
-<text x="540" y="34" font-size="14.5px" fill="#616e7f">                          â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•</text>
+<!-- NEOFETCH PANEL starts at x=550 -->
 
-<!-- system info block -->
-<text font-size="14.5px">
-<tspan x="540" dy="0">
-</tspan>
-<tspan x="540" y="58"  class="cc">  </tspan><tspan class="key">OS</tspan><tspan class="cc">     : ........................... </tspan><tspan class="value">Linux / Windows</tspan>
-<tspan x="540" y="78"  class="cc">  </tspan><tspan class="key">Uptime</tspan><tspan class="cc"> : ..................... </tspan><tspan class="value">20+ years</tspan>
-<tspan x="540" y="98"  class="cc">  </tspan><tspan class="key">Status</tspan><tspan class="cc"> : ..................... </tspan><tspan class="value">Student</tspan>
-<tspan x="540" y="118" class="cc">  </tspan><tspan class="key">Shell</tspan><tspan class="cc">  : ....................... </tspan><tspan class="value">Curiosity + C</tspan>
-<tspan x="540" y="138" class="cc">  </tspan><tspan class="key">IDE</tspan><tspan class="cc">    : .......... </tspan><tspan class="value">VSCode, Neovim, Vim</tspan>
+<text x="550" y="30" class="neo hd">muhammed-shifan@Bit-wisely</text>
+<text x="550" y="30" class="neo cc">                          â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•</text>
 
-<tspan x="540" y="166" class="head">  â€• Languages â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•</tspan>
+<text x="550" y="56"  class="neo"><tspan class="cc">  </tspan><tspan class="key">OS    </tspan><tspan class="cc"> : ............... </tspan><tspan class="val">Linux / Windows</tspan></text>
+<text x="550" y="74"  class="neo"><tspan class="cc">  </tspan><tspan class="key">Uptime</tspan><tspan class="cc"> : ............... </tspan><tspan class="val">20+ years</tspan></text>
+<text x="550" y="92"  class="neo"><tspan class="cc">  </tspan><tspan class="key">Status</tspan><tspan class="cc"> : ............... </tspan><tspan class="val">Student</tspan></text>
+<text x="550" y="110" class="neo"><tspan class="cc">  </tspan><tspan class="key">Shell </tspan><tspan class="cc"> : ............... </tspan><tspan class="val">Curiosity + C</tspan></text>
+<text x="550" y="128" class="neo"><tspan class="cc">  </tspan><tspan class="key">IDE   </tspan><tspan class="cc"> : ............... </tspan><tspan class="val">VSCode, Neovim, Vim</tspan></text>
 
-<tspan x="540" y="190" class="cc">  </tspan><tspan class="key">Languages.Programming</tspan><tspan class="cc"> : .... </tspan><tspan class="value">C, HTML, CSS, JavaScript</tspan>
-<tspan x="540" y="210" class="cc">  </tspan><tspan class="key">Languages.Learning   </tspan><tspan class="cc"> : .... </tspan><tspan class="value">Web Dev, OS / Kernel Dev</tspan>
-<tspan x="540" y="230" class="cc">  </tspan><tspan class="key">Languages.Real       </tspan><tspan class="cc"> : .... </tspan><tspan class="value">English</tspan>
+<text x="550" y="152" class="neo hd">  -- Languages ----------------------------------</text>
+<text x="550" y="172" class="neo"><tspan class="cc">  </tspan><tspan class="key">Languages.Programming</tspan><tspan class="cc"> : </tspan><tspan class="val">C, HTML, CSS, JavaScript</tspan></text>
+<text x="550" y="190" class="neo"><tspan class="cc">  </tspan><tspan class="key">Languages.Learning   </tspan><tspan class="cc"> : </tspan><tspan class="val">Web Dev, OS / Kernel Dev</tspan></text>
+<text x="550" y="208" class="neo"><tspan class="cc">  </tspan><tspan class="key">Languages.Real       </tspan><tspan class="cc"> : </tspan><tspan class="val">English</tspan></text>
 
-<tspan x="540" y="258" class="head">  â€• Interests â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•</tspan>
+<text x="550" y="232" class="neo hd">  -- Interests -----------------------------------</text>
+<text x="550" y="252" class="neo"><tspan class="cc">  </tspan><tspan class="key">Hobbies.Crypto  </tspan><tspan class="cc"> : ...... </tspan><tspan class="val">Classical Ciphers, RSA, Keys</tspan></text>
+<text x="550" y="270" class="neo"><tspan class="cc">  </tspan><tspan class="key">Hobbies.Systems </tspan><tspan class="cc"> : ...... </tspan><tspan class="val">Low-Level C, Memory Mgmt</tspan></text>
+<text x="550" y="288" class="neo"><tspan class="cc">  </tspan><tspan class="key">Hobbies.Web     </tspan><tspan class="cc"> : ...... </tspan><tspan class="val">Building from scratch</tspan></text>
 
-<tspan x="540" y="282" class="cc">  </tspan><tspan class="key">Hobbies.Crypto  </tspan><tspan class="cc"> : .......... </tspan><tspan class="value">Classical Ciphers, RSA, Key Exchange</tspan>
-<tspan x="540" y="302" class="cc">  </tspan><tspan class="key">Hobbies.Systems </tspan><tspan class="cc"> : .......... </tspan><tspan class="value">Low-Level C, Memory Management</tspan>
-<tspan x="540" y="322" class="cc">  </tspan><tspan class="key">Hobbies.Web     </tspan><tspan class="cc"> : .......... </tspan><tspan class="value">Building things from scratch</tspan>
+<text x="550" y="312" class="neo hd">  -- Contact -------------------------------------</text>
+<text x="550" y="332" class="neo"><tspan class="cc">  </tspan><tspan class="key">Email   </tspan><tspan class="cc"> : ......... </tspan><tspan class="val">muhammedshifanvm12@gmail.com</tspan></text>
+<text x="550" y="350" class="neo"><tspan class="cc">  </tspan><tspan class="key">LinkedIn</tspan><tspan class="cc"> : ......... </tspan><tspan class="val">muhammed-shifan-v-m-94a0773a7</tspan></text>
+<text x="550" y="368" class="neo"><tspan class="cc">  </tspan><tspan class="key">GitHub  </tspan><tspan class="cc"> : ......... </tspan><tspan class="val">Bit-wisely</tspan></text>
 
-<tspan x="540" y="350" class="head">  â€• Contact â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•</tspan>
+<text x="550" y="392" class="neo hd">  -- GitHub Stats --------------------------------</text>
+<text x="550" y="412" class="neo"><tspan class="cc">  </tspan><tspan class="key">Repos    </tspan><tspan class="cc">: </tspan><tspan class="val">10</tspan><tspan class="cc"> | </tspan><tspan class="key">Followers    </tspan><tspan class="cc">: </tspan><tspan class="val">0</tspan></text>
+<text x="550" y="430" class="neo"><tspan class="cc">  </tspan><tspan class="key">Following</tspan><tspan class="cc">: </tspan><tspan class="val">0 </tspan><tspan class="cc"> | </tspan><tspan class="key">Member Since </tspan><tspan class="cc">: </tspan><tspan class="val">Dec 2024</tspan></text>
+<text x="550" y="448" class="neo"><tspan class="cc">  </tspan><tspan class="key">Bio      </tspan><tspan class="cc">: ................. </tspan><tspan class="val">Learning curiously.</tspan></text>
 
-<tspan x="540" y="374" class="cc">  </tspan><tspan class="key">Email   </tspan><tspan class="cc"> : ................... </tspan><tspan class="value">muhammedshifanvm12@gmail.com</tspan>
-<tspan x="540" y="394" class="cc">  </tspan><tspan class="key">LinkedIn</tspan><tspan class="cc"> : ................... </tspan><tspan class="value">muhammed-shifan-v-m-94a0773a7</tspan>
-<tspan x="540" y="414" class="cc">  </tspan><tspan class="key">GitHub  </tspan><tspan class="cc"> : ................... </tspan><tspan class="value">Bit-wisely</tspan>
+<!-- neofetch colour swatches row 1 -->
+<rect x="550" y="476" width="14" height="14" fill="#f85149" rx="2"/>
+<rect x="568" y="476" width="14" height="14" fill="#ffa657" rx="2"/>
+<rect x="586" y="476" width="14" height="14" fill="#e3b341" rx="2"/>
+<rect x="604" y="476" width="14" height="14" fill="#3fb950" rx="2"/>
+<rect x="622" y="476" width="14" height="14" fill="#a5d6ff" rx="2"/>
+<rect x="640" y="476" width="14" height="14" fill="#79c0ff" rx="2"/>
+<rect x="658" y="476" width="14" height="14" fill="#d2a8ff" rx="2"/>
+<rect x="676" y="476" width="14" height="14" fill="#c9d1d9" rx="2"/>
 
-<tspan x="540" y="442" class="head">  â€• GitHub Stats â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•â€•</tspan>
+<!-- neofetch colour swatches row 2 (darker) -->
+<rect x="550" y="494" width="14" height="14" fill="#6e1c19" rx="2"/>
+<rect x="568" y="494" width="14" height="14" fill="#7a4a1a" rx="2"/>
+<rect x="586" y="494" width="14" height="14" fill="#7a6019" rx="2"/>
+<rect x="604" y="494" width="14" height="14" fill="#1f5c28" rx="2"/>
+<rect x="622" y="494" width="14" height="14" fill="#4a6e8a" rx="2"/>
+<rect x="640" y="494" width="14" height="14" fill="#345e80" rx="2"/>
+<rect x="658" y="494" width="14" height="14" fill="#5a3d80" rx="2"/>
+<rect x="676" y="494" width="14" height="14" fill="#5e6166" rx="2"/>
 
-<tspan x="540" y="466" class="cc">  </tspan><tspan class="key">Repos    </tspan><tspan class="cc"> : ...... </tspan><tspan class="value">10</tspan><tspan class="cc">   | </tspan><tspan class="key">Followers    </tspan><tspan class="cc"> : ...... </tspan><tspan class="value">0</tspan>
-<tspan x="540" y="486" class="cc">  </tspan><tspan class="key">Following</tspan><tspan class="cc"> : ...... </tspan><tspan class="value">0</tspan><tspan class="cc">   | </tspan><tspan class="key">Member Since </tspan><tspan class="cc"> : ...... </tspan><tspan class="value">Dec 2024</tspan>
-<tspan x="540" y="506" class="cc">  </tspan><tspan class="key">Bio      </tspan><tspan class="cc"> : .......................... </tspan><tspan class="value">Learning curiously.</tspan>
-</text>
-
-<!-- neofetch colour palette dots -->
-<circle cx="542" cy="535" r="7" fill="#f85149"/>
-<circle cx="560" cy="535" r="7" fill="#ffa657"/>
-<circle cx="578" cy="535" r="7" fill="#e3b341"/>
-<circle cx="596" cy="535" r="7" fill="#3fb950"/>
-<circle cx="614" cy="535" r="7" fill="#a5d6ff"/>
-<circle cx="632" cy="535" r="7" fill="#79c0ff"/>
-<circle cx="650" cy="535" r="7" fill="#d2a8ff"/>
-<circle cx="668" cy="535" r="7" fill="#c9d1d9"/>
-
-<!-- colour palette dots (lighter, row 2) -->
-<circle cx="542" cy="554" r="7" fill="#b22a23"/>
-<circle cx="560" cy="554" r="7" fill="#b36e28"/>
-<circle cx="578" cy="554" r="7" fill="#9c7a25"/>
-<circle cx="596" cy="554" r="7" fill="#267a35"/>
-<circle cx="614" cy="554" r="7" fill="#6b8fab"/>
-<circle cx="632" cy="554" r="7" fill="#4e7ea8"/>
-<circle cx="650" cy="554" r="7" fill="#8b6aab"/>
-<circle cx="668" cy="554" r="7" fill="#8e9299"/>
+<line x1="550" y1="522" x2="1085" y2="522" stroke="#30363d" stroke-width="1"/>
+<text x="550" y="546" class="neo cc">  github.com/Bit-wisely                                     Sep 2026</text>
 
 </svg>

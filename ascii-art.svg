@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="576" viewBox="0 0 960 576">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono');
+    
     text { font-family: 'Share Tech Mono', monospace; font-size: 16px; }
   </style>
   <rect width="100%" height="100%" fill="#000000"/>
