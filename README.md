@@ -1,3 +1,1 @@
-﻿<a href="https://github.com/Bit-wisely">
-  <img alt="Bit-wisely GitHub Profile" src="https://raw.githubusercontent.com/Bit-wisely/Bit-wisely/main/profile.svg">
-</a>
+[![Muhammed Shifan's GitHub Profile README](https://raw.githubusercontent.com/Bit-wisely/Bit-wisely/main/profile-card.svg)](https://github.com/Bit-wisely)
